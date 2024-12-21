@@ -1,0 +1,59 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Required to position the connect button outside the content */
+}
+
+.content {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.connect-btn-container {
+  position: absolute; /* Position the button outside of the content */
+  bottom: 20px; /* Adjust this value to position it closer or farther from the bottom */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.connect-btn {
+  padding: 12px 20px;
+  background-color: #28a745; /* Green button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #218838; /* Button hover color */
+}
